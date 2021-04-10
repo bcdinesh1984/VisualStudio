@@ -11,14 +11,14 @@
     {
       "name": "inputblob",
       "type": "blob",
-      "path": "ukgtest/{msg}",
+      "path": "ukgtest/{queueTrigger}",
       "connection": "AzureWebJobsStorage",
       "direction": "in"
     },
     {
       "name": "outputblob",
       "type": "blob",
-      "path": "ukgtestout/{msg}",
+      "path": "ukgtestout/{queueTrigger}",
       "connection": "AzureWebJobsStorage",
       "direction": "out"
     }
