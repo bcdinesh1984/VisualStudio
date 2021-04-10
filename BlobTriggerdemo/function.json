@@ -1,0 +1,26 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "msg",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "outqueue",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "inputblob",
+      "type": "blob",
+      "path": "ukgtest/{msg}",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "name": "outputblob",
+      "type": "blob",
+      "path": "ukgtestout/{msg}",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ]
+}
